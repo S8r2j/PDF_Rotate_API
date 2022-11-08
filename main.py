@@ -16,9 +16,10 @@ async def get_file(angle_of_rotation:int,page_number:int,file:UploadFile=File(..
     count=1
     for i in old_file.pages:
         if(count==page_number):
-            count=count+1
             i.Rotate=angle_of_rotation
             old_file.save(f"tmp/{file.filename}")
+            break
+        count=count+1
     return {"file_url":f"localhost:8000/api/{file_name}"}
 
 
