@@ -6,4 +6,4 @@
 > 4. Make a directory named "tmp" inside the project folder
 > 5. In pycharm terminal, run the command: &nbsp; pip install -r requirements.txt
 > 6. In pycharm terminal, run the command: &nbsp; uvicorn main:app --reload
-> 7. Click on the url
+> 7. Go to the url "localhost:8000/docs"
